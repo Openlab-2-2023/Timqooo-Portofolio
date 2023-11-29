@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <title>Timqooo</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a533785b3c.js" crossorigin="anonymous"></script>
 </head>
 <!------------DOMOV-------------->
 
@@ -18,6 +19,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -43,15 +45,90 @@
                         one of the biggest and best-written universes out there. I have a passion for computers aswell
                         as the military. I'm an active Airsoft player and I'm a Co-Owner of a FiveM Roleplay server.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Website Development</li>
+                            <li><span>CSS</span><br>Website Design</li>
+                            <li><span>JavaScript</span><br>Interactable/Responsive Websites</li>
+                            <li><span>Video Editing</span><br>Simple video editing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span>2022 - Current</span><br>Translating scripts for OldTimesRP</li>
+                            <li><span>2023 - Current</span><br>OpenLab - HTML Lessons</li>
+                            <li><span>2023 - Current</span><br>OpenLab - CSS Lessons</li>
+                            <li><span>2023 - Current</span><br>OpenLab - JavaScript Lessons</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>NETACAD Certificate - IT Essentials</li>
+                            <li><span>2022</span><br>Youtube HTML/CSS Course</li>
+                            <li><span>2023</span><br>OpenLab - AppsLab p.1 (HTML/CSS)</li>
+                            <li><span>2024</span><br>OpenLab - Appslab p.2 (JavaScript)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
+
+    <!------------SLUŽBY-------------->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Website Development</h2>
+                    <p>I'll develop and design your website by your liking. Low cost, medium quality, quick communication.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h2>Part-time Website Administration</h2>
+                    <p>I'll manage your website, add/edit existing code and customize the website by your liking. Medium quality, quick communication.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <h2>Part-time Social Managing</h2>
+                    <p>I'll manage your socials, create and post new content according to the latest internet trends. I'll promote your brand in a funny/meme way.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-film"></i>
+                    <h2>Video Editing</h2>
+                    <p>I'll edit your video in a simple and amateur way. I'll accept mainly edits/short videos for tiktok or other video platforms.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 
 </body>
 
