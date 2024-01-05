@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Timqooo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="master.css">
+    <script src="https://kit.fontawesome.com/a533785b3c.js" crossorigin="anonymous"></script>
+</head>
+<!------------DOMOV-------------->
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Banner2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Domov</a></li>
+                    <li><a href="#about">O mne</a></li>
+                    <li><a href="#services">Služby</a></li>
+                    <li><a href="#portofolio">Projekty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="index.html" onclick="changeLanguage('en')">Anglicky</a></li>
+                    <li><a href="sk.html" onclick="changeLanguage('sk')"><span style="color: rgb(174, 96, 247);"> Slovensky</span></a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>HTML/CSS Programátor</p>
+                <h1>Zdravím,<br> ja som <span>Timotej</span></h1>
+            </div>
+
+
+        </div>
+    </div>
+    <!------------O MNE-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">O mne</h1>
+                    <p>Moje meno je Timotej Hlava a pochádzam zo Slovenska. Momentálne chodím na SPŠ Informačných
+                        Technológií v Kysuckom Novom Meste. Študujem obor informačných technológií. Mám rád videohry,
+                        muziku a seriály. Som veľký a dlhodobý fanúšik Star Wars, jednoho z najväčších a najlepšie
+                        napísaných univerzií. Mám záľubu v počítače a taktiež v armádu. Som spolumajiteľ FiveM Roleplay
+                        servera.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Zručnosti</p>
+                        <p class="tab-links" onclick="opentab('experience')">Skúsenosti</p>
+                        <p class="tab-links" onclick="opentab('education')">Vzdelanie</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Vývoj stránok</li>
+                            <li><span>CSS</span><br>Dizajn stránok</li>
+                            <li><span>JavaScript</span><br>Interaktívne/responzívne stránky</li>
+                            <li><span>3D Modeling</span><br>Vlastné modely a animácie v Blendri</li>
+                            <li><span>Video Editing</span><br>Jednoduché editovanie videí</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span>2022 - Doteraz</span><br>Prekladanie LUA/HTML scriptov pre OldTimesRP</li>
+                            <li><span>2023 - Doteraz</span><br>OpenLab - HTML Lekcie</li>
+                            <li><span>2023 - Doteraz</span><br>OpenLab - CSS Lekcie</li>
+                            <li><span>2024 - Doteraz</span><br>OpenLab - JavaScript Lekcie</li>
+                            <li><span>2024 - Doteraz</span><br>3D Umelec pre projekt v GameJam súťaži</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>NETACAD Certifikát - IT Essentials</li>
+                            <li><span>2022</span><br>Youtube HTML/CSS Kurzy</li>
+                            <li><span>2023</span><br>OpenLab - AppsLab č.1 (HTML/CSS)</li>
+                            <li><span>2024</span><br>OpenLab - Appslab č.2 (JavaScript)</li>
+                            <li><span>2024</span><br>Niekoľko Blender kurzov</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!------------SLUŽBY-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Služby</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Dizajn</h1>
+                    <p>Naprogramujem a nadizajnujem stránku podľa Vašich predstáv. Nízka cena, dobrá kvalita, rýchla
+                        komunikácia.</p>
+                    <a href="#"><span style="color: rgb(174, 96, 247);"> Zisti viac</span></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h1>Web Správca</h1>
+                    <p>Budem spravovať Vašu stránku, pridám/upravím existujúci kód a upravím stránku podľa Vašich predstáv. Dobrá
+                        kvalita, rýchla komunikácia.</p>
+                    <a href="#"><span style="color: rgb(174, 96, 247);"> Zisti viac</span></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <h1>Social Manager</h1>
+                    <p>Budem spravovať Vaše sociálne médiá, vytvárať a zdielať nový obsah podľa najnovších internetových trendov.
+                        Budem propagovať vašu značku vtipným/meme spôsobom.</p>
+                    <a href="#"><span style="color: rgb(174, 96, 247);"> Zisti viac</span></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-film"></i>
+                    <h1>Editor</h1>
+                    <p>Zeditujem Vaše video v jednoduchej forme. Prijmem prevážne malé edity/krátke videá pre
+                        tiktok alebo iné video platformy</p>
+                    <a href="#"><span style="color: rgb(174, 96, 247);"> Zisti viac</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------PROJEKTY-------------->
+    <div id="portofolio">
+        <div class="container">
+            <h1 class="sub-title">Projekty</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h2>Old Times Roleplay</h2>
+                        <p>FiveM Roleplay server založený na jednoduchosti ako za starých čias.
+                        </p>
+                        <a href="https://discord.com/invite/oldtimesrp" target="_blank"><i
+                                class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h2>TBA</h2>
+                        <p>Pripravuje sa!
+                        </p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h2>TBA</h2>
+                        <p>Pripravuje sa!
+                        </p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="projects_sk.html" class="btn">Ďalšie projekty</a>
+        </div>
+
+    </div>
+
+    <!-------CENNÍK-------------------->
+    <div id="price-list">
+        <div class="container">
+            <h1 class="sub-title">Cenník</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Dizajn</h1>
+                    <h2>10$ - 50$</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h1>Web Managing</h1>
+                    <h2>100$/mesačne</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <h1>Social Managing</h1>
+                    <h2>50$/mesačne</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-film"></i>
+                    <h1>Video Editing</h1>
+                    <h2>10 - 40$/video</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------KONTAKT-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Kontakt</h1>
+                    <p><i class="fa-solid fa-envelope"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>012 345 678</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/timqooo.h/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+
+                        <a href="https://www.tiktok.com/@timqooo.h" target="_blank"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://twitter.com/Konficeek" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/Timqooo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://steamcommunity.com/profiles/76561198954522427" target="_blank"><i
+                                class="fa-brands fa-steam"></i></a>
+                    </div>
+                    <a href="images/z tutorialu/my-cv.pdf" download class="btn btn2"><i
+                            class="fa-solid fa-download"></i> Stiahni môj životopis</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Vaše krstné meno" required>
+                        <input type="email" name="Email" placeholder="Vaše priezvisko" required>
+                        <textarea name="Message" rows="6" placeholder="Vaša správa"></textarea>
+                        <button type="submit" class="btn btn2">Odoslať</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Timotej. Stránka vytvorená Timotejom s <i class="fa-solid fa-heart"></i>  a pomocou GreatStack
+                tutoriálov.</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw2spZGHYc_RslYxx9nOlIEu928jRGR2LJVgeMDaH4LBZqol8J2ESl0kWy4wkqmmamm/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+</body>
+
+</html>

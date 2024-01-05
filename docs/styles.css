@@ -25,8 +25,6 @@ body {
 
 nav {
     display: flex;
-    width: 960px;
-    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -365,7 +363,6 @@ form .btn2 {
 .copyright i {
     color: red;
 }
-
 /*-------------MALÁ OBRAZOVKA-------------*/
 nav .fas {
     display: none;
@@ -399,6 +396,7 @@ nav .fas {
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        z-index: 2;
         transition: right 0.5s;
     }
 
@@ -445,31 +443,4 @@ nav .fas {
     .copyright {
         font-size: 10px;
     }
-}
-
-/*-------------VÝBER JAZYKA-------------*/
-.selected-lang {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    line-height: 2;
-}
-
-.selected-lang:before {
-    content: '';
-    display: block;
-    width: 32px;
-    height: 32px;
-    background-image: url(https://flagsapi.com/US/flat/64.png);
-    background-size: cover;
-    background-position: center;
-    margin-right: 4px;
-}
-
-.lang-menu ul {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    border: 1px solid #f8f8f8;
-
 }

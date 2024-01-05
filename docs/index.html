@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <title>Timqooo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="master.css">
     <script src="https://kit.fontawesome.com/a533785b3c.js" crossorigin="anonymous"></script>
 </head>
 <!------------DOMOV-------------->
@@ -22,30 +23,17 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portofolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" onclick="changeLanguage('en')"><span style="color: rgb(174, 96, 247);"> English</span></li>
+                    <li><a href="sk.html" onclick="changeLanguage('sk')">Slovak</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
-                <div class="lang-menu">
-                    <div class="selected-lang">
-                        English
-                    </div>
-                    <ul>
-                        <li>
-                            <a>Slovak</a>
-                        </li>
-                        <li>
-                            <a>English</a>
-                        </li>
-                        <li>
-                            <a>German</a>
-                        </li>
-                    </ul>
-                </div>
             </nav>
             <div class="header-text">
                 <p>HTML/CSS Developer</p>
                 <h1>Hello there,<br> I'm <span>Timotej</span></h1>
             </div>
+
 
         </div>
     </div>
@@ -73,6 +61,7 @@
                             <li><span>HTML</span><br>Website Development</li>
                             <li><span>CSS</span><br>Website Design</li>
                             <li><span>JavaScript</span><br>Interactable/Responsive Websites</li>
+                            <li><span>3D Modeling</span><br>Custom objects and animations in blender</li>
                             <li><span>Video Editing</span><br>Simple video editing</li>
                         </ul>
                     </div>
@@ -83,6 +72,7 @@
                             <li><span>2023 - Current</span><br>OpenLab - HTML Lessons</li>
                             <li><span>2023 - Current</span><br>OpenLab - CSS Lessons</li>
                             <li><span>2023 - Current</span><br>OpenLab - JavaScript Lessons</li>
+                            <li><span>2023 - Current</span><br>3D Artist for GameJam video-game competition</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -91,6 +81,7 @@
                             <li><span>2022</span><br>Youtube HTML/CSS Course</li>
                             <li><span>2023</span><br>OpenLab - AppsLab p.1 (HTML/CSS)</li>
                             <li><span>2024</span><br>OpenLab - Appslab p.2 (JavaScript)</li>
+                            <li><span>2024</span><br>Multiple blender courses</li>
                         </ul>
                     </div>
                 </div>
@@ -106,31 +97,31 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
+                    <h1>Web Design</h1>
                     <p>I'll develop and design your website by your liking. Low cost, good quality, quick
                         communication.</p>
-                    <a href="#">Learn More</a>
+                    <a href="#"><span style="color: rgb(174, 96, 247);"> Learn More</span></a>
                 </div>
                 <div>
                     <i class="fa-solid fa-user-tie"></i>
-                    <h2>Web Managing</h2>
+                    <h1>Web Managing</h1>
                     <p>I'll manage your website, add/edit existing code and customize the website by your liking. Good
                         quality, quick communication.</p>
-                    <a href="#">Learn More</a>
+                    <a href="#"><span style="color: rgb(174, 96, 247);"> Learn More</span></a>
                 </div>
                 <div>
                     <i class="fa-brands fa-tiktok"></i>
-                    <h2>Social Managing</h2>
+                    <h1>Social Managing</h1>
                     <p>I'll manage your socials, create and post new content according to the latest internet trends.
                         I'll promote your brand in a funny/meme way.</p>
-                    <a href="#">Learn More</a>
+                    <a href="#"><span style="color: rgb(174, 96, 247);"> Learn More</span></a>
                 </div>
                 <div>
                     <i class="fa-solid fa-film"></i>
-                    <h2>Video Editing</h2>
+                    <h1>Video Editing</h1>
                     <p>I'll edit your video in a simple and amateur way. I'll accept mainly edits/short videos for
                         tiktok or other video platforms.</p>
-                    <a href="#">Learn More</a>
+                    <a href="#"><span style="color: rgb(174, 96, 247);"> Learn More</span></a>
                 </div>
             </div>
         </div>
@@ -143,9 +134,8 @@
                 <div class="work">
                     <img src="images/work-1.png">
                     <div class="layer">
-                        <h2>Old Times Roleplay</h3>
-                            <p>FiveM Roleplay server založený na jednoduchosti ako to bolo za starých čias. Pripoj sa na
-                                discord.
+                        <h2>Old Times Roleplay</h2>
+                            <p>FiveM Roleplay server based on simplicity as it was in the good old times.
                             </p>
                             <a href="https://discord.com/invite/oldtimesrp" target="_blank"><i
                                     class="fa-brands fa-discord"></i></a>
@@ -154,8 +144,8 @@
                 <div class="work">
                     <img src="images/work-2.png">
                     <div class="layer">
-                        <h2>Pripravuje sa</h3>
-                            <p>V momentálnej chvíli sa pripravuje.
+                        <h2>TBA</h2>
+                            <p>Currently in works!
                             </p>
                             <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
@@ -163,17 +153,49 @@
                 <div class="work">
                     <img src="images/work-2.png">
                     <div class="layer">
-                        <h2>Pripravuje sa</h3>
-                            <p>V momentálnej chvíli sa pripravuje.
+                        <h2>TBA</h2>
+                            <p>Currently in works!
                             </p>
                             <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="projects.html" class="btn">See more</a>
+            <a href="projects_en.html" class="btn">See more</a>
         </div>
 
     </div>
+
+    <!-------CENNÍK-------------------->
+    <div id="price-list">
+        <div class="container">
+            <h1 class="sub-title">Price List</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Design</h1>
+                    <h2>10$ - 50$</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h1>Web Managing</h1>
+                    <h2>100$/month</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <h1>Social Managing</h1>
+                    <h2>50$/month</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-film"></i>
+                    <h1>Video Editing</h1>
+                    <h2>10 - 40$/video</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!------------KONTAKT-------------->
     <div id="contact">
         <div class="container">
